@@ -19,7 +19,7 @@ class GetSession():
         :return:
         """
         login_url = 'https://bbs.byr.cn/user/ajax_login.json'
-        byr_data = {'id': 'glfryqs', 'passwd': 'sgxsgwbd0329'}  # 个人账号信息
+        byr_data = {'id': '', 'passwd': ''}  # 个人账号信息
         self.session.post(login_url, data=byr_data, headers=self.my_header)
         return self.session, self.my_header
 
